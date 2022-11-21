@@ -20,6 +20,10 @@
 		padding-top: rem(12.34);
 		padding-bottom: rem(12.34);
 	}
+	&_more {
+		padding: rem(20) rem(32.25);
+		font-size: rem(14);
+	}
 	 // .button_transparent
 	 &_transparent {
 		border: 1px solid #FF3F3A;
@@ -37,4 +41,22 @@
 			}
 		}
     }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+.title {
+	font-weight: 900;
+	line-height: 130%;
+	@include adaptiveValue("font-size", 46, 30);
+	color: $mainDarkColor;
 }

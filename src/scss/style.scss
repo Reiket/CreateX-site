@@ -134,6 +134,16 @@ body {
 		}
 	}
 }
+.page {
+	// .page__intro
+	&__intro {
+		@include adaptiveValue("padding-top", 320, 80);
+	}
+    // .page__why
+    &__why {
+		@include adaptiveValue("padding-top", 180, 80);
+    }
+}
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
 // Для подключения/отключения конкретных стилей смотри base.scss

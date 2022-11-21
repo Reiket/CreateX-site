@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="wrapper">
+          <div id="popup" class="popup__fade">
+        <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup"></a>
+                <h1 class="popup__title">Sign in</h1>
+                <div class="popup__text">Sign in to your account using email and password provided during registration.</div>
+                <form action="" class="popup__forms forms-popup js-form">
+                <div class="popup__error">Fill in all fields!</div>
+                    <label for="" class="forms-popup__title">
+                        Email
+                        <input id="email" type="email" placeholder="Your working email" class="forms-popup__input js-input-email js-input">
+                    </label>
+                    <label for="" class="forms-popup__title">
+                        Password
+                        <div id="password" class="forms-popup__password">
+                            <input type="password" placeholder="" class="forms-popup__input_2 js-input">
+                            <button id="btn" type="button" class="forms-popup__eye icon-Eye"></button>
+                        </div>
+                    </label>
+                    <div class="forms-popup__bottom">
+                        <label for="" class="forms-popup__keep">
+                            <div class="checkbox">
+                                <input id="c_1"  class="checkbox__input" type="checkbox" value="1">
+                                <label for="c_1" class="checkbox__label"><span class="checkbox__text">Keep me signed</span></label>
+                            </div>
+                        </label>
+                        <a href="" class="forms-popup__link">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="forms-popup__button button button_sm js-form-btn">Sign in</button>
+                </form>
+                <div class="forms-popup__account">Don't have an account?<a href="#popup_2" class="forms-popup__sing-up popup__link"> Sign up</a></div>
+                <div class="popup__social social-popup">
+                    <h3 class="social-popup__title">Or sign in with</h3>
+                    <div class="social-popup__items">
+                        <a href="" class="social-popup__link icon-Facebook"></a>
+                        <a href="" class="social-popup__link icon-Google"></a>
+                        <a href="" class="social-popup__link icon-Twitter"></a>
+                        <a href="" class="social-popup__link icon-Linked-In"></a>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup__fade">
+        <div class="popup popup_2">
+            <div class="popup__body popup__body_2">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close close-popup"></a>
+                    <h1 class="popup__title">Sign up</h1>
+                    <div class="popup__text">Registration takes less than a minute but gives you full control over your studying.</div>
+                    <form action="" class="popup__forms forms-popup js-form">
+                        <div class="popup__error">Fill in all fields!</div> 
+                        <label for="" class="forms-popup__title">
+                            Full Name
+                            <input id="name" type="text" placeholder="Your full name" class="forms-popup__input js-input name">
+                            <small class="forms-popup__name"></small>
+                        </label>
+                        <label for="" class="forms-popup__title">
+                            Email
+                            <input type="text" placeholder="Your working email" class="forms-popup__input js-input">
+                        </label>
+                        <label for="" class="forms-popup__title">
+                            Password
+                            <div class="forms-popup__password">
+                                <input id="pass1" type="password" placeholder="" class="forms-popup__input_2 js-input">
+                                <button id="btn_2" type="button" class="forms-popup__eye icon-Eye"></button>
+                            </div>
+                        </label>
+                        <label for="" class="forms-popup__title">
+                            Confirm Password
+                            <div class="forms-popup__password">
+                                <input id="pass2" type="password" placeholder="" class="forms-popup__input_2 js-input">         
+                                <button id="btn_3" type="button" class="forms-popup__eye icon-Eye"></button>  
+                            </div>
+                            <small class="forms-popup__small-pass"></small> 
+                        </label>
+                        <div class="forms-popup__bottom">
+                            <label for="" class="forms-popup__keep">
+                                <div class="checkbox">
+                                    <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+                                    <label for="c_2" class="checkbox__label"><span class="checkbox__text">Remember me</span></label>
+                                </div>
+                            </label>
+                            <a href="" class="forms-popup__link">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="forms-popup__button button button_sm">Sign up</button>
+                    </form>
+                    <div class="forms-popup__account">Already have an account?<a href="#popup" class="forms-popup__sing-up popup__link"> Sign in</a></div>
+                    <div class="popup__social social-popup">
+                        <h3 class="social-popup__title">Or sign in with</h3>
+                        <div class="social-popup__items">
+                            <a href="" class="social-popup__link icon-Facebook"></a>
+                            <a href="" class="social-popup__link icon-Google"></a>
+                            <a href="" class="social-popup__link icon-Twitter"></a>
+                            <a href="" class="social-popup__link icon-Linked-In"></a>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <header id="header" class="header lock-padding">
+   <div class="header__container">
+      <div class="header__body">
+         <div class="header__logo">
+            <a href=""><img src="../img/logo/logo-header.svg" alt=""></a>
+         </div>
+         <div class="header__menu menu">
+            <nav class="menu__body">
+               <ul class="menu__list">
+                  <li class="menu__item">
+                     <a href="" class="menu__link">About Us</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Courses</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Events</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <div class="header__log">
+            <button data-da=".menu__list, 479,98" type="submit" class="header__button button">Get consultation</button>
+            <a data-da=".menu__list, 991,98" href="#popup" class="header__reg icon-user popup__link"><span> Log in / Register</span></a>
+            <button type="button" class="icon-menu"><span></span></button>
+         </div>
+      </div>
+   </div>
+</header>
+      <main>
+         <div class="page__intro intro">
+               <div data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" data-prlx-dxr data-parallax-dyr class="icons-intro_1">
+                  <img src="./img/icons-header/01.svg" alt="">
+               </div>
+               <div data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" data-prlx-dxr data-parallax-dyr  class="icons-intro_2">
+                  <img src="./img/icons-header/02.svg" alt="">
+               </div>
+               <div  data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" data-prlx-dxr data-parallax-dyr  class="icons-intro_3">
+                  <img src="./img/icons-header/03.svg" alt="">
+               </div>
+               <div data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" data-prlx-dxr data-parallax-dyr  class="icons-intro_4">
+                  <img src="./img/icons-header/04.svg" alt="">
+               </div>
+               <div data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" data-prlx-dxr data-parallax-dyr  class="icons-intro_5">
+                  <img src="./img/icons-header/05.svg" alt="">
+               </div>
+               <div data-prlx-mouse data-prlx-cx="30" data-prlx-cy="30" data-prlx-dxr data-parallax-dyr class="icons-intro_6">
+                  <img src="./img/icons-header/06.svg" alt="">
+               </div>   
+            <div class="intro__container">
+               <div class="intro__body">
+                  <div class="intro__content">
+                     <div class="intro__play play">
+                        <div class="play__bg"></div>
+                        <button type="button" class="play__circle"></button>
+                        <div class="play__text">Play showreel</div>
+                     </div>
+                     <h1 class="intro__title">
+                        Enjoy studying with Createx Online Courses
+                     </h1>
+                     <div class="intro__block">
+                        <button type="submit" class="intro__button button button_transparent">About us</button>
+                        <button type="submit" class="intro__button button">Explore courses</button>
+                     </div>
+                  </div>
+                  <div class="intro__image">
+                     <img src="./img/intro/intro-img.jpg" alt="">
+                  </div>
+               </div>
+               <div class="intro__bottom bottom-intro">
+                  <div class="bottom-intro__body">
+                     <div class="bottom-intro__item">
+                        <div class="bottom-intro__num">1200</div>
+                        <div class="bottom-intro__text">Students graduated</div>
+                     </div>
+                     <div class="bottom-intro__item">
+                        <span class="bottom-intro__circle"></span>
+                     </div>
+                     <div class="bottom-intro__item">
+                        <div class="bottom-intro__num">84</div>
+                        <div class="bottom-intro__text">Completed courses</div>
+                     </div>
+                     <div class="bottom-intro__item">
+                        <span class="bottom-intro__circle"></span>
+                     </div>
+                     <div class="bottom-intro__item">
+                        <div class="bottom-intro__num">16</div>
+                        <div class="bottom-intro__text">Qualified tutors</div>
+                     </div>
+                     <div class="bottom-intro__item">
+                        <span class="bottom-intro__circle"></span>
+                     </div>
+                     <div class="bottom-intro__item">
+                        <div class="bottom-intro__num">5</div>
+                        <div class="bottom-intro__text">Years of experience</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer></footer>
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

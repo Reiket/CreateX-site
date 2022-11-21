@@ -1,0 +1,103 @@
+    <div id="popup" class="popup__fade">
+        <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup"></a>
+                <h1 class="popup__title">Sign in</h1>
+                <div class="popup__text">Sign in to your account using email and password provided during registration.</div>
+                <form action="" class="popup__forms forms-popup js-form">
+                <div class="popup__error">Fill in all fields!</div>
+                    <label for="" class="forms-popup__title">
+                        Email
+                        <input id="email" type="email" placeholder="Your working email" class="forms-popup__input js-input-email js-input">
+                    </label>
+                    <label for="" class="forms-popup__title">
+                        Password
+                        <div id="password" class="forms-popup__password">
+                            <input type="password" placeholder="" class="forms-popup__input_2 js-input">
+                            <button id="btn" type="button" class="forms-popup__eye icon-Eye"></button>
+                        </div>
+                    </label>
+                    <div class="forms-popup__bottom">
+                        <label for="" class="forms-popup__keep">
+                            <div class="checkbox">
+                                <input id="c_1"  class="checkbox__input" type="checkbox" value="1">
+                                <label for="c_1" class="checkbox__label"><span class="checkbox__text">Keep me signed</span></label>
+                            </div>
+                        </label>
+                        <a href="" class="forms-popup__link">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="forms-popup__button button button_sm js-form-btn">Sign in</button>
+                </form>
+                <div class="forms-popup__account">Don't have an account?<a href="#popup_2" class="forms-popup__sing-up popup__link"> Sign up</a></div>
+                <div class="popup__social social-popup">
+                    <h3 class="social-popup__title">Or sign in with</h3>
+                    <div class="social-popup__items">
+                        <a href="" class="social-popup__link icon-Facebook"></a>
+                        <a href="" class="social-popup__link icon-Google"></a>
+                        <a href="" class="social-popup__link icon-Twitter"></a>
+                        <a href="" class="social-popup__link icon-Linked-In"></a>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup__fade">
+        <div class="popup popup_2">
+            <div class="popup__body popup__body_2">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close close-popup"></a>
+                    <h1 class="popup__title">Sign up</h1>
+                    <div class="popup__text">Registration takes less than a minute but gives you full control over your studying.</div>
+                    <form action="" class="popup__forms forms-popup js-form">
+                        <div class="popup__error">Fill in all fields!</div> 
+                        <label for="" class="forms-popup__title">
+                            Full Name
+                            <input id="name" type="text" placeholder="Your full name" class="forms-popup__input js-input name">
+                            <small class="forms-popup__name"></small>
+                        </label>
+                        <label for="" class="forms-popup__title">
+                            Email
+                            <input type="text" placeholder="Your working email" class="forms-popup__input js-input">
+                        </label>
+                        <label for="" class="forms-popup__title">
+                            Password
+                            <div class="forms-popup__password">
+                                <input id="pass1" type="password" placeholder="" class="forms-popup__input_2 js-input">
+                                <button id="btn_2" type="button" class="forms-popup__eye icon-Eye"></button>
+                            </div>
+                        </label>
+                        <label for="" class="forms-popup__title">
+                            Confirm Password
+                            <div class="forms-popup__password">
+                                <input id="pass2" type="password" placeholder="" class="forms-popup__input_2 js-input">         
+                                <button id="btn_3" type="button" class="forms-popup__eye icon-Eye"></button>  
+                            </div>
+                            <small class="forms-popup__small-pass"></small> 
+                        </label>
+                        <div class="forms-popup__bottom">
+                            <label for="" class="forms-popup__keep">
+                                <div class="checkbox">
+                                    <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+                                    <label for="c_2" class="checkbox__label"><span class="checkbox__text">Remember me</span></label>
+                                </div>
+                            </label>
+                            <a href="" class="forms-popup__link">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="forms-popup__button button button_sm">Sign up</button>
+                    </form>
+                    <div class="forms-popup__account">Already have an account?<a href="#popup" class="forms-popup__sing-up popup__link"> Sign in</a></div>
+                    <div class="popup__social social-popup">
+                        <h3 class="social-popup__title">Or sign in with</h3>
+                        <div class="social-popup__items">
+                            <a href="" class="social-popup__link icon-Facebook"></a>
+                            <a href="" class="social-popup__link icon-Google"></a>
+                            <a href="" class="social-popup__link icon-Twitter"></a>
+                            <a href="" class="social-popup__link icon-Linked-In"></a>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,362 @@
+%ic {
+  font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?ifgggc');
+	src:  url('.../fonts/icomoon.eot?ifgggc#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?ifgggc') format('truetype'),
+		url('../fonts/icomoon.woff?ifgggc') format('woff'),
+		url('../fonts/icomoon.svg?ifgggc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-dribbble:before {
+	content: "\e900";
+  }
+  .icon-YouTube:before {
+	content: "\e901";
+  }
+  .icon-Alert:before {
+	content: "\e902";
+  }
+  .icon-Alert-octagon:before {
+	content: "\e903";
+  }
+  .icon-arrow01:before {
+	content: "\e904";
+  }
+  .icon-arrow02:before {
+	content: "\e905";
+  }
+  .icon-arrow03:before {
+	content: "\e906";
+  }
+  .icon-arrow-back:before {
+	content: "\e907";
+  }
+  .icon-arrow-circle:before {
+	content: "\e908";
+  }
+  .icon-arrow-next:before {
+	content: "\e909";
+  }
+  .icon-arrow-rest:before {
+	content: "\e90a";
+  }
+  .icon-arrow-spoller:before {
+	content: "\e90b";
+  }
+  .icon-arrow-spoller02:before {
+	content: "\e90c";
+  }
+  .icon-arrow-two:before {
+	content: "\e90d";
+  }
+  .icon-arrow-two02:before {
+	content: "\e90e";
+  }
+  .icon-arrow-video:before {
+	content: "\e90f";
+  }
+  .icon-arrow-video02:before {
+	content: "\e910";
+  }
+  .icon-arrow-video-back:before {
+	content: "\e911";
+  }
+  .icon-Attach:before {
+	content: "\e912";
+  }
+  .icon-bag:before {
+	content: "\e913";
+  }
+  .icon-behance:before {
+	content: "\e914";
+  }
+  .icon-Bell:before {
+	content: "\e915";
+  }
+  .icon-Block:before {
+	content: "\e916";
+  }
+  .icon-Calendar:before {
+	content: "\e917";
+  }
+  .icon-card:before {
+	content: "\e918";
+  }
+  .icon-Cart:before {
+	content: "\e919";
+  }
+  .icon-Chat:before {
+	content: "\e91a";
+  }
+  .icon-check:before {
+	content: "\e91b";
+  }
+  .icon-check-circle:before {
+	content: "\e91c";
+  }
+  .icon-check-round:before {
+	content: "\e91d";
+  }
+  .icon-Clock:before {
+	content: "\e91e";
+  }
+  .icon-Closed-Eye:before {
+	content: "\e91f";
+  }
+  .icon-close-round:before {
+	content: "\e920";
+  }
+  .icon-Comment:before {
+	content: "\e921";
+  }
+  .icon-cross:before {
+	content: "\e922";
+  }
+  .icon-danger:before {
+	content: "\e923";
+  }
+  .icon-delete:before {
+	content: "\e924";
+  }
+  .icon-dislike:before {
+	content: "\e925";
+  }
+  .icon-dribbble1:before {
+	content: "\e926";
+  }
+  .icon-email:before {
+	content: "\e927";
+  }
+  .icon-Envelope-opened:before {
+	content: "\e928";
+  }
+  .icon-External-Link:before {
+	content: "\e929";
+  }
+  .icon-Eye:before {
+	content: "\e92a";
+  }
+  .icon-Facebook:before {
+	content: "\e92b";
+  }
+  .icon-figma:before {
+	content: "\e92c";
+  }
+  .icon-Files:before {
+	content: "\e92d";
+  }
+  .icon-filter-1:before {
+	content: "\e92e";
+  }
+  .icon-filter-2:before {
+	content: "\e92f";
+  }
+  .icon-github:before {
+	content: "\e930";
+  }
+  .icon-gitlab:before {
+	content: "\e931";
+  }
+  .icon-Google:before {
+	content: "\e932";
+  }
+  .icon-google-hangouts:before {
+	content: "\e933";
+  }
+  .icon-grid:before {
+	content: "\e934";
+  }
+  .icon-hanger:before {
+	content: "\e935";
+  }
+  .icon-heart:before {
+	content: "\e936";
+  }
+  .icon-History:before {
+	content: "\e937";
+  }
+  .icon-home:before {
+	content: "\e938";
+  }
+  .icon-Info:before {
+	content: "\e939";
+  }
+  .icon-Instagram:before {
+	content: "\e93a";
+  }
+  .icon-Instagram-filled:before {
+	content: "\e93b";
+  }
+  .icon-iPhone:before {
+	content: "\e93c";
+  }
+  .icon-Layouts:before {
+	content: "\e93d";
+  }
+  .icon-like:before {
+	content: "\e93e";
+  }
+  .icon-Linked-In:before {
+	content: "\e93f";
+  }
+  .icon-list:before {
+	content: "\e940";
+  }
+  .icon-Lock:before {
+	content: "\e941";
+  }
+  .icon-login:before {
+	content: "\e942";
+  }
+  .icon-logout:before {
+	content: "\e943";
+  }
+  .icon-Mail:before {
+	content: "\e944";
+  }
+  .icon-map:before {
+	content: "\e945";
+  }
+  .icon-Messanger:before {
+	content: "\e946";
+  }
+  .icon-mic:before {
+	content: "\e947";
+  }
+  .icon-minus:before {
+	content: "\e948";
+  }
+  .icon-Minus-round:before {
+	content: "\e949";
+  }
+  .icon-odnoklassniki:before {
+	content: "\e94a";
+  }
+  .icon-off:before {
+	content: "\e94b";
+  }
+  .icon-on:before {
+	content: "\e94c";
+  }
+  .icon-outline:before {
+	content: "\e94d";
+  }
+  .icon-outline-volume:before {
+	content: "\e94e";
+  }
+  .icon-paypal:before {
+	content: "\e94f";
+  }
+  .icon-pinterest:before {
+	content: "\e950";
+  }
+  .icon-Play:before {
+	content: "\e951";
+  }
+  .icon-plus:before {
+	content: "\e952";
+  }
+  .icon-Plus-round:before {
+	content: "\e953";
+  }
+  .icon-rss:before {
+	content: "\e954";
+  }
+  .icon-search:before {
+	content: "\e955";
+  }
+  .icon-Share:before {
+	content: "\e956";
+  }
+  .icon-Shield:before {
+	content: "\e957";
+  }
+  .icon-skype:before {
+	content: "\e958";
+  }
+  .icon-slack:before {
+	content: "\e959";
+  }
+  .icon-slack-filled:before {
+	content: "\e95a";
+  }
+  .icon-star:before {
+	content: "\e95b";
+  }
+  .icon-telegram:before {
+	content: "\e95c";
+  }
+  .icon-tumblr:before {
+	content: "\e95d";
+  }
+  .icon-twitch:before {
+	content: "\e95e";
+  }
+  .icon-Twitter:before {
+	content: "\e95f";
+  }
+  .icon-Unlock:before {
+	content: "\e960";
+  }
+  .icon-Upload:before {
+	content: "\e961";
+  }
+  .icon-user:before {
+	content: "\e962";
+  }
+  .icon-Vector:before {
+	content: "\e963";
+  }
+  .icon-viber:before {
+	content: "\e964";
+  }
+  .icon-vimeo:before {
+	content: "\e965";
+  }
+  .icon-VKontakte:before {
+	content: "\e966";
+  }
+  .icon-wallet:before {
+	content: "\e967";
+  }
+  .icon-wechat:before {
+	content: "\e968";
+  }
+  .icon-Whatsapp:before {
+	content: "\e969";
+  }

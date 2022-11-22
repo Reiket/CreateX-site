@@ -60,3 +60,11 @@
 	@include adaptiveValue("font-size", 46, 30);
 	color: $mainDarkColor;
 }
+.suptitle {
+	font-weight: 700;
+	line-height: 150%;
+	text-transform: uppercase;
+	letter-spacing: rem(1);
+	color: $mainDarkColor;
+	&:not(:last-child) {margin-bottom: em(8, 16);}
+}

@@ -137,7 +137,7 @@ body {
 .page {
 	// .page__intro
 	&__intro {
-		@include adaptiveValue("padding-top", 320, 80);
+		@include adaptiveValue("padding-top", 320, 120);
 	}
     // .page__why
     &__why {

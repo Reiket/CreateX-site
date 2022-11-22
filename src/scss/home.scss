@@ -184,6 +184,9 @@
         z-index: 3;
         top: 0;
         right: percent(148, 1920);
+        @media (max-width:$tablet){
+            opacity: 0.5;
+        }
     }
     // .icons-intro_2
     &_2 {
@@ -238,6 +241,7 @@
 }
 
 .why {
+    position: relative;
     // .why__conrainer
     &__conrainer {
     }
@@ -254,6 +258,7 @@
     }
     // .why__image
     &__image {
+        position: relative;
         img {
             width: 100%;
             height: auto;
@@ -267,12 +272,7 @@
     }
     // .why__suptitle
     &__suptitle {
-        font-weight: 700;
-        line-height: 150%;
-        text-transform: uppercase;
-        letter-spacing: rem(1);
-        color: $mainDarkColor;
-        &:not(:last-child) {margin-bottom: em(8, 16);}
+
     }
     // .why__title
     &__title {
@@ -283,6 +283,7 @@
         display: flex;
         flex-direction: column;
         row-gap: rem(12);
+        @include adaptiveValue("padding-bottom", 40, 25);
     }
     // .why__item
     &__item {
@@ -297,6 +298,35 @@
             color: $redColor;
         }
     }
+    &__button {
+        @media (max-width:$mobileSmall){
+            width: 100%; 
+        }
+    }
+		// .why__icons
+		&__icons {
+			// .why__icons_1
+
+			&_1 {
+                position: absolute;
+                top: percent(247, 740);
+                left: -5.7%;
+                @media (max-width:$tablet){
+                    opacity: 0.5;
+                }
+			}
+
+			// .why__icons_2
+
+			&_2 {
+                position: absolute;
+                right: -8%; 
+                top: percent(440, 740);
+                @media (max-width:$tablet){
+                    opacity: 0.5;
+                }
+			}
+		}
 }
 
 

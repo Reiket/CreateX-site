@@ -329,5 +329,98 @@
 		}
 }
 
+.courses {
+    // .courses__container
+    &__container {
+    }
+    // .courses__body
+    &__body {
+    }
+    // .courses__top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .courses__suptitle
+    &__suptitle {
+    }
+    // .courses__title
+    &__title {
+    }
+    // .courses__button
+    &__button {
+        height: rem(52);
+        padding: rem(17) rem(39);
+        align-self: flex-end;
+    }
+    // .course__card
+    &__card {
+
+    }
+}
+.card-course {
+    @include adaptiveValue("padding-top", 60, 40);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr));
+    gap: rem(30);
+    // .card-course__item
+    &__item {
+        display: flex;
+        gap: rem(32);
+        background: #FFFFFF;
+        border: 1px solid #E5E8ED;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+        border-radius: 4px;
+    }
+    // .card-course__image
+    &__image {
+    }
+    // .card-course__content
+    &__content {
+        padding-top: rem(33);
+    }
+    // .card-course__button
+    &__button {
+        background: #03CEA4;
+        border-radius: 4px;
+        padding: rem(1) rem(8);
+        line-height: 150%;
+        font-size: rem(14);
+        color: #fff;
+        &:not(:last-child) {margin-bottom: rem(20);}
+    }
+    // .card-course__title
+    &__title {
+        font-weight: 700;
+        line-height: 150%;
+        font-size: rem(20);
+        color: $mainDarkColor;
+        &:not(:last-child) {margin-bottom: em(20, 20);}
+    }
+    // .card-course__info
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+    }
+    // .card-course__price
+    &__price {
+        color: #FF4242;
+        font-size: rem(18);
+        font-weight: 700;
+        line-height: 150%;
+    }
+    // .card-course__name
+    &__name {
+        font-size: rem(18);
+        &::before{
+            content: '';
+            border-left: 1px solid $mainColor; 
+            padding-right: rem(8);      
+        }
+    }
+}
+
+
 
 //====================================================================================================

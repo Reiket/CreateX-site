@@ -143,6 +143,11 @@ body {
     &__why {
 		@include adaptiveValue("padding-top", 180, 80);
     }
+	 // .page__courses
+
+	&__courses {
+		@include adaptiveValue("padding-top", 180, 80);
+    }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов

@@ -1,9 +1,4 @@
 //====================================================================================================
-.page {
-    // .page__intro
-    &__intro {
-    }
-}
 .intro {
     position: relative;
 	&::before {
@@ -538,6 +533,12 @@
         justify-content: center;
         align-items: center;
         gap: rem(40);
+        position: relative;
+        z-index: 1;
+        @media (max-width:$mobile){
+            flex-direction: column;
+            gap: rem(15);
+        }
     }
 
     // .events__text
@@ -552,8 +553,40 @@
     // .events__button
 
     &__button {
+        @media (max-width:$mobileSmall){
+            width: 100%; 
+            text-align: center;
+        }
     }
+        // .events__icons
+
+        &__icons {
+            // .events__icons_5
+    
+            &_1 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 3;
+                @media (max-width:$tablet){
+                    opacity: 0.5;
+                }
+            }
+    
+            // .events__icons_6
+    
+            &_2 {
+                position: absolute;
+                top: -14%;
+                right: -3.5%;
+                z-index: 3;
+                @media (max-width:$tablet){
+                    opacity: 0.5;
+                }
+            }
+        }
 }
+
 
 .list-events {
     position: relative;
@@ -561,6 +594,7 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(24);
+    flex-wrap: wrap;
     // .list-events__item
 
     &__item {
@@ -568,13 +602,15 @@
         border-radius: rem(4);
         padding: rem(32) rem(40);
         transition: box-shadow 0.8s ease 0s;
-        display: flex;
         align-items: center;
-        //gap: rem(40);
         @media (any-hover: hover){
             &:hover{
                 box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
             }
+        }
+        @media (min-width:$tablet){
+            display: grid;
+            grid-template-columns: rem(57) rem(150) 1fr rem(136);
         }
     }
 
@@ -586,13 +622,14 @@
         line-height: 130%;
         font-size: rem(48);
         letter-spacing: rem(1);
-        margin-right: rem(20);
     }
 
     // .list-events__date
 
     &__date {
-        margin-right: rem(40);
+        @media (min-width:$tablet){
+            margin-left: rem(20); 
+        }
     }
 
     // .list-events__months
@@ -621,9 +658,9 @@
 
     &__title {
         font-weight: 700;
-        font-size: rem(20);
         line-height: 150%;
         color: $mainDarkColor;
+        @include adaptiveValue("font-size", 20, 14);
     }
 
     // .list-events__text
@@ -631,11 +668,22 @@
     &__text {
         line-height: 160%;
         color: #787A80;
+        @include adaptiveValue("font-size", 16, 14);
     }
 
     // .list-events__button
 
     &__button {
+        width: rem(136);
+        height: rem(44);
+        padding: rem(0) rem(0) rem(0) rem(0);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        @media (max-width:$tablet){
+            width: 100%;
+            margin-top: rem(20);
+        }
     }
 }
 

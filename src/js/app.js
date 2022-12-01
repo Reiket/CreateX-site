@@ -21,3 +21,9 @@ paralaxMouses.paralaxMouse();
 
 import * as headerScrolls from './header-scroll.js';
 headerScrolls.headerScroll();
+
+import * as btnColors from './script.js';
+btnColors.btnColor();
+
+import * as tabsFunc from './tabs.js';
+tabsFunc.tabs();

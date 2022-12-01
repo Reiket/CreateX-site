@@ -62,7 +62,6 @@ $responsiveType: 1;
 @import "base/null";
 
 // Стили тега BODY ============================================================================================================================================================================================================================================================================================================================================================================================
-
 body {
 	color: $mainColor;
 	overflow: auto;
@@ -147,6 +146,17 @@ body {
 
 	&__courses {
 		@include adaptiveValue("padding-top", 180, 80);
+    }
+	 // .page__benefits
+
+	&__benefits {
+		@include adaptiveValue("padding-top", 180, 80);
+		@include adaptiveValue("padding-bottom", 140, 100);
+    }
+	  // .page__events
+
+	&__events {
+		@include adaptiveValue("padding-bottom", 80, 50);
     }
 }
 

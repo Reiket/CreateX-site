@@ -98,6 +98,24 @@ export function validationFunc () {
         })
 }
 
+export function btnColor () {
+    const btn = document.querySelectorAll('.card-course__button');
+    btn.forEach((item) => {
+        if (item.textContent == 'Management') {
+            item.style.background = '#5A87FC';
+        } 
+        if (item.textContent == 'HR & Recruting') {
+            item.style.background = '#F89828';
+        }
+        if (item.textContent == 'Marketing') {
+            item.style.background = '#03CEA4';
+        }
+        if (item.textContent == 'Design') {
+            item.style.background = '#F52F6E';
+        }
+    })
+}
+
 
 
 

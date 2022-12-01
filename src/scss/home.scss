@@ -340,6 +340,11 @@
     &__top {
         display: flex;
         justify-content: space-between;
+        @media (max-width: em(550)){
+            flex-direction: column;
+            text-align: center;
+            row-gap: rem(25);
+        }
     }
     // .courses__suptitle
     &__suptitle {
@@ -351,7 +356,9 @@
     &__button {
         height: rem(52);
         padding: rem(17) rem(39);
-        align-self: flex-end;
+        @media (min-width: em(550)){
+            align-self: flex-end;       
+        }
     }
     // .course__card
     &__card {
@@ -361,27 +368,46 @@
 .card-course {
     @include adaptiveValue("padding-top", 60, 40);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr));
     gap: rem(30);
+    @media (min-width:em(650)){
+        grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr));
+    }
     // .card-course__item
     &__item {
         display: flex;
         gap: rem(32);
         background: #FFFFFF;
         border: 1px solid #E5E8ED;
-        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
         border-radius: 4px;
+        transition: all 0.3s ease 0s;
+        @media (max-width:em(650)){
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: rem(25);
+        }
+        @media (any-hover: hover){
+            &:hover{
+                box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+            }
+        }
     }
     // .card-course__image
     &__image {
+        img {
+            @media (max-width: em(650)){
+                width: 100%;
+            }
+        }
     }
     // .card-course__content
     &__content {
-        padding-top: rem(33);
+        @media (min-width:em(650)){
+            padding-top: rem(33);
+        }
     }
     // .card-course__button
     &__button {
-        background: #03CEA4;
         border-radius: 4px;
         padding: rem(1) rem(8);
         line-height: 150%;
@@ -402,6 +428,9 @@
         display: flex;
         align-items: center;
         gap: rem(8);
+        @media (max-width: em(650)){
+            justify-content: center;
+        }
     }
     // .card-course__price
     &__price {
@@ -420,6 +449,201 @@
         }
     }
 }
+
+.benefits {
+
+    // .benefits__container
+
+    &__container {
+    }
+
+    // .benefits__body
+
+    &__body {
+    }
+
+    // .benefits__top
+
+    &__top {
+        text-align: center;
+    }
+
+    // .benefits__suptitle
+
+    &__suptitle {
+    }
+
+    // .benefits__title
+
+    &__title {
+    }
+
+    // .benefits__tabs
+
+    &__tabs {
+    }
+}
+
+.events {
+    position: relative;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content:'';
+		background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+		opacity: 0.2;
+		min-width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+    // .events__container
+
+    &__container {
+    }
+
+    // .events__body
+
+    &__body {
+        @include adaptiveValue("padding-top", 80, 45);
+    }
+
+    // .events__top
+
+    &__top {
+        text-align: center;
+    }
+
+    // .events__suptitle
+
+    &__suptitle {
+    }
+
+    // .events__title
+
+    &__title {
+    }
+
+    // .events__list
+
+    &__list {
+        @include adaptiveValue("padding-top", 60, 40);
+    }
+
+    // .events__more
+
+    &__more {
+        @include adaptiveValue("padding-top", 65, 30);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(40);
+    }
+
+    // .events__text
+
+    &__text {
+        font-size: rem(28);
+        line-height: 150%;
+        color: $mainDarkColor;
+        font-weight: 700;
+    }
+
+    // .events__button
+
+    &__button {
+    }
+}
+
+.list-events {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+    // .list-events__item
+
+    &__item {
+        background: #FFFFFF;
+        border-radius: rem(4);
+        padding: rem(32) rem(40);
+        transition: box-shadow 0.8s ease 0s;
+        display: flex;
+        align-items: center;
+        //gap: rem(40);
+        @media (any-hover: hover){
+            &:hover{
+                box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+            }
+        }
+    }
+
+    // .list-events__num
+
+    &__num {
+        color: $redColor;
+        font-weight: 900;
+        line-height: 130%;
+        font-size: rem(48);
+        letter-spacing: rem(1);
+        margin-right: rem(20);
+    }
+
+    // .list-events__date
+
+    &__date {
+        margin-right: rem(40);
+    }
+
+    // .list-events__months
+
+    &__months {
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: 150%;
+        color: $mainDarkColor;
+    }
+
+    // .list-events__hour
+
+    &__hour {
+        line-height: 160%;
+        color: #787A80;
+    }
+
+    // .list-events__info
+
+    &__info {
+        margin-right: rem(40);
+    }
+
+    // .list-events__title
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: 150%;
+        color: $mainDarkColor;
+    }
+
+    // .list-events__text
+
+    &__text {
+        line-height: 160%;
+        color: #787A80;
+    }
+
+    // .list-events__button
+
+    &__button {
+    }
+}
+
+
+
+
+
+
 
 
 
